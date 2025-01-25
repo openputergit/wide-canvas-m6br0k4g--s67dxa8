@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block Warden | Blockchain GPT</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <style>
+        * {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+        .neu-brutal {
+            border: 3px solid #000;
+            box-shadow: 5px 5px 0px #000;
+            transition: all 0.2s ease;
+        }
+        .neu-brutal:hover {
+            transform: translate(-2px, -2px);
+            box-shadow: 7px 7px 0px #000;
+        }
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0px); }
+        }
+        .floating {
+            animation: float 6s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body class="bg-[#FFE8D6]">
+    <nav class="p-4 bg-white neu-brutal m-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="text-2xl font-bold">Block Warden</div>
+            <div class="hidden md:flex space-x-6">
+                <a href="#features" class="hover:underline">Features</a>
+                <a href="#about" class="hover:underline">About</a>
+                <button class="bg-black text-white px-6 py-2 neu-brutal">Launch App</button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mx-auto px-4 py-12">
+        <section class="flex flex-col md:flex-row items-center justify-between gap-12">
+            <div class="md:w-1/2">
+                <h1 class="text-5xl md:text-7xl font-bold mb-6">ask. investigate. uncover.</h1>
+                <p class="text-xl mb-8">Your AI-powered blockchain investigation assistant. Simplifying complex blockchain forensics with conversational AI.</p>
+                <div class="flex gap-4">
+                    <button class="bg-black text-white px-8 py-4 text-lg neu-brutal">Try Now</button>
+                    <button class="bg-white px-8 py-4 text-lg neu-brutal">Learn More</button>
+                </div>
+            </div>
+            <div class="md:w-1/2">
+                <div class="bg-[#9CE37D] p-8 neu-brutal floating">
+                    <i class="bi bi-shield-check text-9xl"></i>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="py-20">
+            <h2 class="text-4xl font-bold mb-12 text-center">Key Features</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-6 neu-brutal">
+                    <i class="bi bi-search text-4xl mb-4"></i>
+                    <h3 class="text-xl font-bold mb-3">Quick Analysis</h3>
+                    <p>Rapidly analyze and verify blockchain transactions with AI-powered insights.</p>
+                </div>
+                <div class="bg-white p-6 neu-brutal">
+                    <i class="bi bi-wallet2 text-4xl mb-4"></i>
+                    <h3 class="text-xl font-bold mb-3">Wallet Investigation</h3>
+                    <p>Get detailed insights about wallet addresses and transaction patterns.</p>
+                </div>
+                <div class="bg-white p-6 neu-brutal">
+                    <i class="bi bi-graph-up text-4xl mb-4"></i>
+                    <h3 class="text-xl font-bold mb-3">Pattern Detection</h3>
+                    <p>Identify anomalous patterns and potential laundering attempts.</p>
+                </div>
+                <div class="bg-white p-6 neu-brutal">
+                    <i class="bi bi-shield-lock text-4xl mb-4"></i>
+                    <h3 class="text-xl font-bold mb-3">Security Insights</h3>
+                    <p>Detect and flag suspicious activities and illicit transactions.</p>
+                </div>
+                <div class="bg-white p-6 neu-brutal">
+                    <i class="bi bi-translate text-4xl mb-4"></i>
+                    <h3 class="text-xl font-bold mb-3">Clear Translation</h3>
+                    <p>Convert complex blockchain data into clear, actionable insights.</p>
+                </div>
+                <div class="bg-white p-6 neu-brutal">
+                    <i class="bi bi-chat-dots text-4xl mb-4"></i>
+                    <h3 class="text-xl font-bold mb-3">User-Friendly AI</h3>
+                    <p>Interact naturally with our conversational AI interface.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20">
+            <div class="bg-[#FFB4A2] p-8 neu-brutal">
+                <h2 class="text-3xl font-bold mb-6">Ready to investigate?</h2>
+                <p class="text-xl mb-8">Start uncovering blockchain insights with Block Warden today.</p>
+                <form class="flex flex-col md:flex-row gap-4">
+                    <input type="email" placeholder="Enter your email" class="p-4 neu-brutal flex-grow" required>
+                    <button class="bg-black text-white px-8 py-4 neu-brutal">Get Early Access</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-black text-white p-8 mt-12">
+        <div class="container mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="text-2xl font-bold mb-4 md:mb-0">Block Warden</div>
+                <div class="flex gap-6">
+                    <a href="#" class="hover:text-[#FFB4A2]"><i class="bi bi-twitter text-xl"></i></a>
+                    <a href="#" class="hover:text-[#FFB4A2]"><i class="bi bi-github text-xl"></i></a>
+                    <a href="#" class="hover:text-[#FFB4A2]"><i class="bi bi-discord text-xl"></i></a>
+                </div>
+            </div>
+            <div class="mt-8 text-center">
+                <p>© 2023 Block Warden. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+<script>document.body.addEventListener('wheel', e => { if (!e.ctrlKey) return; e.preventDefault(); return }, { passive: false })</script>
+	</body>
+</html>
